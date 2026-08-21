@@ -1,0 +1,12 @@
+#write a python program to check if a number is even or odd
+def check_even_odd(number):
+    if number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+# Test the function
+test_number = int(input("Enter a number to check if it is even or odd: "))
+result = check_even_odd(test_number)
+print(f"{test_number} is {result}.")
+

@@ -1,0 +1,12 @@
+#generate a python code to compute the factorial of a number using recursion
+def factorial(n):
+    # Base case: if n is 0 or 1, return 1
+    if n == 0 or n == 1:
+        return 1
+    # Recursive case: n * factorial of (n-1)
+    else:
+        return n * factorial(n - 1)
+# Test the function
+test_number = 6
+result = factorial(test_number)
+print(f"The factorial of {test_number} is {result}.")

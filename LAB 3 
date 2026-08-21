@@ -1,0 +1,25 @@
+"""#generate a code to check the number is palindrome or not
+def is_palindrome(num):
+    # Convert the number to string
+    str_num = str(num)
+    # Check if the string is equal to its reverse
+    return str_num == str_num[::-1]
+# Test the function
+test_number = 89
+if is_palindrome(test_number):
+    print(f"{test_number} is a palindrome.")
+else:
+    print(f"{test_number} is not a palindrome.")"""
+
+
+
+
+#generate a python code to compute factorial of a number using recursion
+def factorial(n):
+    # Base case: if n is 0 or 1, return 1
+    if n == 0 or n == 1:
+        return 1
+    # Recursive case: n * factorial of (n-1)
+    else:
+        return n * factorial(n - 1)
+    

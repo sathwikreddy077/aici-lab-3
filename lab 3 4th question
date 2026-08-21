@@ -1,0 +1,27 @@
+#Write an optimized Python program to check whether a number is prime, composite, or neither. Include input validation and use efficient logic
+def is_prime(num):
+    if num <= 1:
+        return False
+    if num <= 3:
+        return True
+    if num % 2 == 0 or num % 3 == 0:
+        return False
+    i = 5
+    while i * i <= num:
+        if num % i == 0 or num % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+def check_number_type(num):
+    if num <= 1:
+        return "Neither prime nor composite"
+    elif is_prime(num):
+        return "Prime"
+    else:
+        return "Composite"
+
+# Test the function
+test_number = int(input("Enter a number to check its type: "))
+result = check_number_type(test_number)
+print(f"{test_number} is {result}.")
